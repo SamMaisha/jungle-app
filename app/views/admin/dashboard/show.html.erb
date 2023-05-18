@@ -8,9 +8,10 @@
     <h3>Current Statistics For Store</h3>
   </div>
   <div class="card-body">
-    <h5 class="card-title">Number of Product Categories: </h5>
-    <h5 class="card-title">Number of Product Types Available:</h5>
+    <h5 class="card-title">Number of Product Categories: <strong> <%= @categories_count%> </strong> </h5>
+    <h5 class="card-title">Number of Product Types Available:  <strong> <%= @products_count%> </strong></h5>
   </div>
   <div class="card-footer text-muted">
+  <%= link_to 'See All Products', admin_products_path, class: 'btn btn-primary' %>
   </div>
 </div>
